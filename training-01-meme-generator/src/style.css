@@ -1,0 +1,38 @@
+.app-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.meme-container {
+  position: relative;
+  top: 100px;
+  display: flex;
+  justify-content: center;
+}
+
+.img {
+  text-align: center;
+  position: absolute;
+  height: 50vh;
+}
+
+.top-line {
+  text-align: center;
+  position: absolute;
+  top: 0;
+  color: yellow;
+}
+
+.bottom-line {
+  text-align: center;
+  position: absolute;
+  top: 37vh;
+  color: yellow;
+}
+
+.inputs-container {
+  display: flex;
+  flex-direction: column;
+  width: 25vw;
+}
