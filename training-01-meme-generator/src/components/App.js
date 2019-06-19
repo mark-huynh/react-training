@@ -1,4 +1,6 @@
 import React from "react";
+import Inputs from "./Inputs";
+import "../style.css";
 
 class App extends React.Component {
   state = {
@@ -16,32 +18,27 @@ class App extends React.Component {
   };
 
   render() {
+    const { topLine, bottomLine, imageUrl } = this.state;
     return (
-      <React.Fragment>
-        <label>Top Line</label>
-        <input
-          name="topLine"
-          onChange={this.handleLineChange}
-          value={this.state.topLine}
+      <div className="app-container">
+        <Inputs
+          onLineChange={this.handleLineChange}
+          topLine={topLine}
+          bottomLine={bottomLine}
+          imageUrl={imageUrl}
         />
-        <label>Bottom Line</label>
-        <input
-          name="bottomLine"
-          onChange={this.handleLineChange}
-          value={this.state.bottomLine}
-        />
-        <label>Image Url</label>
-        <input
-          name="imageUrl"
-          onChange={this.handleLineChange}
-          value={this.state.imageUrl}
-        />
-        <h1>{this.state.topLine}</h1>
-        <h1>{this.state.bottomLine}</h1>
-        <img src={this.state.imageUrl} />
-      </React.Fragment>
+        <Meme topLine={topLine} bottomLine={bottomLine} imageUrl={imageUrl} />
+      </div>
     );
   }
 }
+
+const Meme = ({ topLine, bottomLine, imageUrl }) => (
+  <div className="meme-container">
+    <h1 className="top-line">{topLine}</h1>
+    <h1 className="bottom-line">{bottomLine}</h1>
+    <img className="meme" src={imageUrl} />
+  </div>
+);
 
 export default App;
