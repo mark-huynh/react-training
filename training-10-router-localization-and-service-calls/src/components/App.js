@@ -22,7 +22,7 @@ const App = () => {
     <IntlProvider locale={locale} messages={messageMapping[locale]}>
       <Router>
         <Route exact path="/" component={Home} />
-        <Route path="/dogs" component={Dogs} />
+        <Route exact path="/dogs" component={Dogs} />
       </Router>
     </IntlProvider>
   );
