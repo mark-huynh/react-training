@@ -1,6 +1,8 @@
 import React from "react";
 import PropTypes from "prop-types";
 
+// Parrot Address: https://i.ytimg.com/vi/h_t7VzZ2Y8s/maxresdefault.jpg
+
 const Inputs = ({ topLine, bottomLine, imageUrl, onLineChange }) => (
   <div className="inputs-container">
     <label>Top Line</label>

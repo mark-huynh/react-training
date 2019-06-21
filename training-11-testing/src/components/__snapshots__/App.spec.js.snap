@@ -1,0 +1,33 @@
+exports[`undefined 1`] = `
+<App>
+  <div>
+    <Input
+      bottomLine=""
+      handleChange={[Function]}
+      topLine="">
+      <div>
+        <input
+          id="top-line-input"
+          name="topLine"
+          onChange={[Function]}
+          value="" />
+        <input
+          id="bottom-line-input"
+          name="bottomLine"
+          onChange={[Function]}
+          value="" />
+      </div>
+    </Input>
+    <Meme
+      bottomLine=""
+      topLine="">
+      <div>
+        <h1
+          id="top-line-text" />
+        <h1
+          id="bottom-line-text" />
+      </div>
+    </Meme>
+  </div>
+</App>
+`;
